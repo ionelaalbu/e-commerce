@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store|CONTACT</title>
+    <link rel="stylesheet" href="contact.css">
+    <meta name="author" content="Ionela Albu">
+    <script
+
+      src="https://kit.fontawesome.com/aed0be2434.js"
+
+      crossorigin="anonymous"
+
+    ></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading-1">SHOP STORE</h1>
+        <div class="navIconContainer">
+            <a href="home.html">
+                <div class="iconDiv ">
+                    <i class="fa-solid fa-house icon "></i>
+                    <p class="p ">Home</p>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="iconDiv">
+                    <i class="fa-solid fa-shop icon "></i>
+                    <p class="p ">Shop</p>
+                </div>
+            </a>
+            <a href="contact.html">
+                <div class="iconDiv">
+                    <i class="fa-regular fa-paper-plane icon active"></i>
+                    <p class="p active">Contact</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <from class="form">
+        <section>
+            <h1>Registration</h1>
+            <div class="container">
+                <div class="form-group" id="fn-container">
+                    <input type="text" placeholder="First Name" class="input" data-key="firstName">
+                    <label class="form-label">First Name</label>
+                </div>
+                <div class="span">
+                    <span class="empty">Empty Field</span>
+                    <span class="errorM" data-error="f-err">Name must contain only alphabets</span>
+                </div>
+                <div class="form-group" id="sn-container">
+                    <input type="text" placeholder="Second Name" class="input" data-key="secondName">
+                    <label class="form-label">Second Name</label>
+                </div>
+                <div class="span">
+                    <span class="empty">Empty Field</span>
+                    <span class="errorM" data-error="s-err">Name must contain only alphabets</span>
+                </div>
+                <div class="form-group" id="email-container">
+                    <input type="text" placeholder="email" class="input" data-key="Email">
+                    <label class="form-label">Email</label>
+                </div>
+                <div class="span">
+                    <span class="empty">Empty Field</span>
+                    <span class="errorM" data-error="e-err">Invalid Email</span>
+                </div>
+                <div class="form-group" id="pass-container">
+                    <input type="password" placeholder="password" class="input" data-key="Password">
+                    <label for="password" id="plabel" class="form-label">Password</label>
+                </div>
+                <div class="span">
+                    <span class="empty">Empty Field</span>
+                    <ul class="errorM" data-error="p-err">
+                        <li>Password must contain atleast 8 characters</li>
+                        <li>Password must contain atleast one lower case letter</li>
+                        <li>Password must contain atleast one upper case letter</li>
+                        <li>Password must contain atleast one digit</li>
+                        <li>Password must contain atleast one special character(!@#$%^&*)</li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="button">Create Account</button>
+        </section>
+    </from>
+   <script src="contact.js"></script>
+</body>
+</html>

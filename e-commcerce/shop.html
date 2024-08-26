@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ionela Albu">
+    <title>Store|SHOP</title>
+    <link rel="stylesheet" href="shop.css">
+    <script
+
+      src="https://kit.fontawesome.com/aed0be2434.js"
+
+      crossorigin="anonymous"
+
+    ></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading-1">SHOP STORE</h1>
+        <div class="navIconContainer">
+            <a href="home.html">
+                <div class="iconDiv ">
+                    <i class="fa-solid fa-house icon "></i>
+                    <p class="p ">Home</p>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="iconDiv">
+                    <i class="fa-solid fa-shop icon active"></i>
+                    <p class="p active">Shop</p>
+                </div>
+            </a>
+            <a href="contact.html">
+                <div class="iconDiv">
+                    <i class="fa-regular fa-paper-plane icon"></i>
+                    <p class="p">Contact</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="filter">
+        <div class="searchContainer">
+            <input class="input" placeholder="Search a product...">
+        </div>
+        <div class="priceContainer">
+            <select name="price" id="price">
+                <option value="">--Price--</option>
+                <option value="50">50 & above</option>
+                <option value="100">100 & above</option>
+                <option value="120">120 & above</option>
+            </select>
+        </div>
+        <div class="starsContainer">
+            <select name="star" id="star">
+                <option value="">--Star--</option>
+                <option value="1">1 & above</option>
+                <option value="3">3 & above</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </div>
+    <div class="toggle">
+        <i class="fa-solid fa-cart-shopping" id="icon"></i>
+        <div class="bill">
+            <div id="cart"></div>
+            <button class="removepay">remove</button>
+        </div>
+    </div>
+    <main class="main">
+        <div class="cardContainer">
+            <!-- <div class="cardTemplate">
+                <div class="img">
+                    <img class="picture" src="img/im1.jpeg" alt="im1">
+                </div>
+                <div class="details">
+                    <p class="name">Title</p>
+                    <p class="productPrice">45$</p>
+                </div>
+                <p class="productStar">⭐⭐⭐</p>
+                <button type="button" class="addBtn">Add to cart</button>
+            </div> -->
+        </div>
+    </main>
+    <script type="module" src="shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color-1: #5eead4;
+    --text-color-2: orangered;
+    --bg-color:#020617;
+}
+body{
+    background-color: var(--bg-color);
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.heading-1{
+    color: var(--text-color-2);
+}
+a{
+    text-decoration: none;
+}
+.navIconContainer{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+    background: transparent;
+}
+.iconDiv{
+    height: 36px;
+    width: 40px;
+    font-size: 30px;
+    background-color:transparent;
+    margin-right: 10px ;
+    transition: width 2s;
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin-left: 10px;
+}
+.icon{
+    padding-left: 2px;
+    color: var(--text-color-2);
+}
+.p{
+    margin-left: 10px;
+    color: var(--text-color-2);
+}
+.iconDiv:hover{
+    width: 220px;
+    background: #0f172a;
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+.active{
+    color: rgb(32, 120, 158);
+}
+
+/*main*/
+.main{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.first-bg{
+    border-radius: 11px;
+    margin-left: 100px;
+    width: 65%;
+    min-height: 70vh;
+    background-image: url(img/home1.jpeg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.second-bg{
+    border-radius: 11px;
+    margin-left: 100px;
+    width: 65%;
+    min-height: 70vh;
+    background-image: url(img/home2.jpeg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.third-bg{
+    border-radius: 11px;
+    margin-left: 100px;
+    width: 65%;
+    min-height: 70vh;
+    background-image: url(img/home3.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 70%;
+    min-height: 60vh;
+    padding-left: 10px;
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: show 0.5s 1s linear forwards;
+}
+@keyframes show{
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.heading1-1{
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--bg-color);
+}
+.heading-2{
+    font-style: oblique;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: rgb(224, 49, 78);
+}
+.paragraph{
+    font-weight: 900;
+    color: var(--bg-color);
+}
+.ButtonsContainer{
+    margin-top: 60px;
+}
+.read{
+    font-size: 30px;
+    padding: 10px;
+    letter-spacing: 7px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: gray;
+    margin-right: 20px;
+    /* background-image: conic-gradient(from -45deg, grey 180deg, rgb(110, 106, 106) 90deg) */
+}
+.read:hover{
+    color: var(--bg-color);
+    animation: text 0.5s  ease;
+    background-color: transparent;
+    border: 1px solid var(--bg-color);
+    transform: scale(1.1);
+    transition: 0.6s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@keyframes text {
+    10%{
+        transition: 0.3s ease-in-out;
+        background-image: conic-gradient(from -45deg, grey 160deg, rgb(110, 106, 106) 90deg)
+    }
+    30%{
+        transition: 0.3s ease-in-out;
+        background-image: conic-gradient(from -45deg, grey 135deg, rgb(110, 106, 106) 90deg)
+    }
+    40%{
+        transition: 0.3s ease-in-out;
+        background-image: conic-gradient(from -45deg, grey 90deg, rgb(110, 106, 106) 90deg)
+    }
+    50%{
+        transition: 0.3s ease-in-out;
+        background-image: conic-gradient(from -45deg, grey 45deg, rgb(110, 106, 106) 90deg)
+    }
+    75%{
+        transition: 0.3s ease-in-out;
+        background-image: conic-gradient(from -45deg, grey 0deg, rgb(110, 106, 106) 90deg)
+    }
+    100%{
+        transition: 0.3s ease-in-out;
+        background-image: conic-gradient(from -45deg, grey -45deg, rgb(110, 106, 106) 90deg)
+    }
+    100%{
+        background-color: gray;
+    }
+}
+
+.follow{
+    font-size: 25px;
+    padding: 10px;
+    letter-spacing: 7px;
+    font-weight: 700;
+    color: var(--bg-color);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--bg-color);
+}
+.follow:hover{
+    color: #fff;
+    animation: text1 0.5s  ease;
+    background-color: grey;
+    border: none;
+    transition: 0.6s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@keyframes text1 {
+    10%{
+        background-image: conic-gradient(from -45deg, grey 160deg, rgb(110, 106, 106) 90deg)
+    }
+    30%{
+        background-image: conic-gradient(from -45deg, grey 135deg, rgb(110, 106, 106) 90deg)
+    }
+    50%{
+        background-image: conic-gradient(from -45deg, grey 90deg, rgb(110, 106, 106) 90deg)
+    }
+    50%{
+        background-image: conic-gradient(from -45deg, grey 45deg, rgb(110, 106, 106) 90deg)
+    }
+    75%{
+        background-image: conic-gradient(from -45deg, grey 0deg, rgb(110, 106, 106) 90deg)
+    }
+    100%{
+        background-image: conic-gradient(from -45deg, grey -45deg, rgb(110, 106, 106) 90deg)
+    }
+}
+
+.pictures{
+    width: 500px;
+    height: 150px;
+    margin-left: 600px;
+    display: flex;
+    gap: 20px;
+    z-index: 99;
+}
+.position1{
+    margin-top: 383px;
+}
+.position2{
+    margin-top: -100px;
+}
+.picc1:hover{
+    transform: scale(1.1);
+}
+.picc1{
+    height: 100%;
+    width: 40%;
+    cursor: pointer;
+    border-radius: 11px;
+    transition: 1s ease ;
+} 
+.picc2{
+    height: 100%;
+    width: 40%;
+  cursor: pointer;
+  transition: 1s ease ;
+  border-radius: 11px;
+}
+.picc2:hover{
+    transform: scale(1.1);
+}
+.picc3{
+    height: 100%;
+    width: 40%;
+  cursor: pointer;
+  transition: 1s ease ;
+  border-radius: 11px;
+}  
+.picc3:hover{
+    transform: scale(1.1);
+}
+.none{
+    display: none;
+}
+.show{
+    display: block;
+}
